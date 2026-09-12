@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll Video Experience</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== VIDEO BACKGROUND ===== -->
+  <video id="bgVideo" autoplay muted loop playsinline preload="auto">
+    <!--
+      ⬇️  PUT YOUR VIDEO FILE HERE  ⬇️
+      Place your video file (e.g. "my-video.mp4") in this same folder
+      and update the src below.
+    -->
+    <source src="video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- ===== SCROLL CONTAINER (makes the page tall enough to scroll) ===== -->
+  <div id="scrollContainer">
+
+    <!-- Section 1 — Hero -->
+    <section class="content-section hero">
+      <h1>Scroll Down</h1>
+      <p>Watch the video come alive as you scroll ↓</p>
+      <div class="scroll-indicator">
+        <span>▼</span>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="content-section">
+      <div class="text-block glass">
+        <h2>Immersive Experience</h2>
+        <p>The video behind plays forward as you scroll down and rewinds when you scroll back up.</p>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="content-section">
+      <div class="text-block glass">
+        <h2>Your Story Unfolds</h2>
+        <p>Add your own content, text, images, and animations on top of the video background.</p>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="content-section">
+      <div class="text-block glass">
+        <h2>Frame by Frame</h2>
+        <p>Every pixel of scroll maps to a moment in time. Complete control, completely smooth.</p>
+      </div>
+    </section>
+
+    <!-- Section 5 — End -->
+    <section class="content-section hero">
+      <h1>The End</h1>
+      <p>Scroll back up to rewind ↑</p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
